@@ -861,7 +861,7 @@ img{
     gap:1rem;
     flex-wrap:wrap;
     font-family:var(--mono);
-    font-size:.76rem;
+    font-size:.96rem;
     color:var(--muted);
     letter-spacing:.06em;
     background-color: #2b261f;
