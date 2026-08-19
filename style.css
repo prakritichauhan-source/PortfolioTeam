@@ -554,7 +554,7 @@ img{
     padding:1.8rem;
     border-radius:var(--radius);
     background:var(--surface);
-    border:1px solid var(--line);
+    border:5px solid var(--line);
     overflow:hidden;
     transform-style:preserve-3d;
     transition:border-color .35s var(--ease), background .35s var(--ease), box-shadow .35s var(--ease);
