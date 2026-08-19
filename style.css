@@ -4,7 +4,7 @@
 
 :root{
     --ink:        #14120d;
-    --surface:    #1f1c17;
+    --surface:    #181612;
     --raised:     #2b261f;
     --line:       #3b352b;
 
@@ -118,7 +118,7 @@ img{
     pointer-events:none;
     background:radial-gradient(
         320px circle at var(--mx, 50%) var(--my, 50%),
-        rgba(246,232,170,.055),
+        rgba(246, 232, 170, 0.03),
         transparent 70%
     );
     transition:background .18s linear;
@@ -150,7 +150,7 @@ img{
     top:0;
     z-index:100;
     backdrop-filter:blur(14px);
-    background:rgba(20,18,13,.55);
+    background:rgba(15, 14, 10, 0.55);
     border-bottom:1px solid transparent;
     transition:background .35s var(--ease), border-color .35s var(--ease);
 }
@@ -877,7 +877,7 @@ img{
     place-items:center;
     border-radius:50%;
     border:1px solid var(--line);
-    background:rgba(31,28,23,.85);
+    background:rgba(12, 11, 9, 0.85);
     backdrop-filter:blur(8px);
     color:var(--cream);
     cursor:pointer;
@@ -930,7 +930,7 @@ img{
         right:0;
         flex-direction:column;
         gap:0;
-        background:rgba(20,18,13,.97);
+        background:rgba(4, 4, 3, 0.97);
         border-bottom:1px solid var(--line);
         padding:.5rem 5vw 1rem;
         clip-path:inset(0 0 100% 0);
