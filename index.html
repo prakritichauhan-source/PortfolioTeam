@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Prakriti Chauhan — Computing with AI student and front-end developer.">
+
+<title>Prakriti Chauhan — Portfolio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+
+
+<body>
+
+<div class="ambient">
+    <div class="orb orb--one"></div>
+    <div class="orb orb--two"></div>
+</div>
+
+<div class="spotlight" id="spotlight"></div>
+
+<div id="progress-bar"></div>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="site-header" id="site-header">
+
+    <div class="nav-shell">
+
+        <a href="#top" class="wordmark">PC <span>/ portfolio</span></a>
+
+        <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links">
+            Menu
+        </button>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </div>
+
+</header>
+
+
+<main id="top">
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="hero">
+
+    <p class="eyebrow">Computing with AI · Front-end</p>
+
+    <h1 data-split>Prakriti <span class="accent">Chauhan</span></h1>
+
+    <p class="hero-line">
+        I build <span class="rotator" id="rotator" aria-live="polite">responsive layouts</span><br>
+        with HTML, CSS and a lot of curiosity.
+    </p>
+
+    <div class="hero-actions">
+        <a href="#projects" class="btn btn--solid">See projects <span class="arrow">→</span></a>
+        <a href="#contact" class="btn btn--ghost">Get in touch</a>
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     ABOUT
+========================================================= -->
+
+<section class="section" id="about">
+
+    <div class="section-head" data-reveal>
+        <h2>About</h2>
+        <span class="count">01 — who</span>
+    </div>
+
+    <div class="about-grid">
+
+        <div data-reveal>
+            <p>
+                I'm a Computing with AI student who spends most of her free time
+                building things for the browser. I like the part where a static
+                layout starts responding — a hover that lands right, a section
+                that arrives instead of just appearing.
+            </p>
+            <p>
+                Right now I'm working through JavaScript, motion design and
+                accessibility, and rebuilding my older projects as I learn
+                something that would have made them better.
+            </p>
+            <a href="#skills" class="btn btn--ghost" style="margin-top:1.6rem">View skills</a>
+        </div>
+
+        <figure class="portrait" id="portrait" data-reveal style="--d:.12s">
+            <img
+                src="about.jpg"
+                alt="A laptop showing colourful code at dusk, with warm string lights blurred in the background"
+                id="portrait-img"
+                width="1175"
+                height="697"
+                loading="lazy"
+                decoding="async">
+            <span class="monogram" aria-hidden="true">PC</span>
+        </figure>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PROJECTS
+========================================================= -->
+
+<section class="section" id="projects">
+
+    <div class="section-head" data-reveal>
+        <h2>Projects</h2>
+        <span class="count">02 — work</span>
+    </div>
+
+    <div class="projects">
+
+        <article class="card" data-tilt data-reveal>
+            <h3>Portfolio website</h3>
+            <p>
+                This site. Semantic HTML, a responsive grid, and scroll-driven
+                motion built with the Intersection Observer API rather than
+                scroll listeners.
+            </p>
+            <ul class="tags">
+                <li>HTML</li><li>CSS</li><li>JavaScript</li>
+            </ul>
+        </article>
+
+        <article class="card" data-tilt data-reveal style="--d:.08s">
+            <h3>EcoMart</h3>
+            <p>
+                A shopping site built for coursework, with product listings, a
+                category nav and a checkout layout. My first real go at keeping
+                a component style consistent across pages.
+            </p>
+            <ul class="tags">
+                <li>HTML</li><li>CSS</li><li>Layout</li>
+            </ul>
+        </article>
+
+        <article class="card" data-tilt data-reveal style="--d:.16s">
+            <h3>Uplevia</h3>
+            <p>
+                A business site covering services, team and contact. Built
+                mobile-first, so the desktop version is the enhancement rather
+                than the starting point.
+            </p>
+            <ul class="tags">
+                <li>HTML</li><li>CSS</li><li>Responsive</li>
+            </ul>
+        </article>
+
+        <article class="card" data-tilt data-reveal style="--d:.24s">
+            <h3>Weather app</h3>
+            <p>
+                A weather page that reads a live API and renders conditions for
+                a searched city. Small project, but where fetch and async
+                finally clicked.
+            </p>
+            <ul class="tags">
+                <li>JavaScript</li><li>API</li><li>CSS</li>
+            </ul>
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SKILLS
+========================================================= -->
+
+<section class="section" id="skills">
+
+    <div class="section-head" data-reveal>
+        <h2>Skills</h2>
+        <span class="count">03 — toolkit</span>
+    </div>
+
+    <!-- Row one -->
+    <div class="marquee" data-reveal>
+        <div class="marquee__track">
+
+            <ul class="marquee__group">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Responsive design</li>
+                <li>Flexbox &amp; Grid</li>
+                <li>Accessibility</li>
+            </ul>
+
+            <ul class="marquee__group" aria-hidden="true">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Responsive design</li>
+                <li>Flexbox &amp; Grid</li>
+                <li>Accessibility</li>
+            </ul>
+
+        </div>
+    </div>
+
+    <!-- Row two, scrolling the other way -->
+    <div class="marquee marquee--reverse" data-reveal style="--speed:36s">
+        <div class="marquee__track">
+
+            <ul class="marquee__group">
+                <li>Python</li>
+                <li>Java</li>
+                <li>Git &amp; GitHub</li>
+                <li>Figma</li>
+                <li>Problem solving</li>
+                <li>VS Code</li>
+            </ul>
+
+            <ul class="marquee__group" aria-hidden="true">
+                <li>Python</li>
+                <li>Java</li>
+                <li>Git &amp; GitHub</li>
+                <li>Figma</li>
+                <li>Problem solving</li>
+                <li>VS Code</li>
+            </ul>
+
+        </div>
+    </div>
+
+    <p class="marquee-note" data-reveal>Hover to pause</p>
+
+</section>
+
+
+<!-- =========================================================
+     CONTACT
+========================================================= -->
+
+<section class="section" id="contact">
+
+    <div class="section-head" data-reveal>
+        <h2>Contact</h2>
+        <span class="count">04 — say hi</span>
+    </div>
+
+    <div class="contact-grid">
+
+        <div class="contact-copy" data-reveal>
+            <p>
+                Open to internships, junior front-end roles and student projects.
+                Send a note and I'll reply within a couple of days.
+            </p>
+            <ul class="contact-links">
+                <li><a href="mailto:hello@example.com">hello@example.com</a></li>
+                <li><a href="https://github.com" target="_blank" rel="noopener">github.com/prakriti</a></li>
+                <li><a href="https://linkedin.com" target="_blank" rel="noopener">linkedin.com/in/prakriti</a></li>
+            </ul>
+        </div>
+
+        <form id="contact-form" novalidate data-reveal style="--d:.1s">
+
+            <div class="field">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name">
+                <span class="error" data-error-for="name"></span>
+            </div>
+
+            <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com">
+                <span class="error" data-error-for="email"></span>
+            </div>
+
+            <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="What are you working on?"></textarea>
+                <span class="error" data-error-for="message"></span>
+            </div>
+
+            <button type="submit" class="btn btn--solid">Send message <span class="arrow">→</span></button>
+
+            <p class="form-status" id="form-status" role="status"></p>
+
+        </form>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer class="site-footer">
+    <span>© 2026 Prakriti Chauhan</span>
+    <span>Built by hand — HTML, CSS, JavaScript</span>
+</footer>
+
+
+<button id="to-top" aria-label="Back to top">↑</button>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+
+    /* =====================================================
+       1. HERO — split the heading into words so each one
+       can rise in on its own delay.
+    ===================================================== */
+
+    document.querySelectorAll("[data-split]").forEach(function (heading) {
+
+        var index = 0;
+
+        heading.childNodes.forEach = Array.prototype.forEach;
+
+        var html = Array.from(heading.childNodes).map(function (node) {
+
+            var isAccent = node.nodeType === 1 && node.classList.contains("accent");
+            var text = node.textContent.trim();
+
+            if (!text) return "";
+
+            return text.split(/\s+/).map(function (word) {
+                var cls = isAccent ? "word accent" : "word";
+                return '<span class="' + cls + '"><span style="--i:' + (index++) + '">' + word + "</span></span>";
+            }).join(" ");
+
+        }).join(" ");
+
+        heading.innerHTML = html;
+
+    });
+
+
+    /* =====================================================
+       2. HERO — rotating role text with a short scramble
+    ===================================================== */
+
+    var rotator = document.getElementById("rotator");
+
+    var phrases = [
+        "responsive layouts",
+        "clean interfaces",
+        "small useful tools",
+        "things that move well"
+    ];
+
+    var phraseIndex = 0;
+
+    
+    function typePhrase(text, done) {
+
+        var i = 0;
+        rotator.textContent = "";
+
+        var timer = setInterval(function () {
+            rotator.textContent = text.slice(0, ++i);
+            if (i >= text.length) {
+                clearInterval(timer);
+                setTimeout(done, 1800);
+            }
+        }, 55);
+    }
+
+    function erasePhrase(done) {
+
+        var text = rotator.textContent;
+        var i = text.length;
+
+        var timer = setInterval(function () {
+            rotator.textContent = text.slice(0, --i);
+            if (i <= 0) {
+                clearInterval(timer);
+                done();
+            }
+        }, 28);
+    }
+
+    function cyclePhrases() {
+        typePhrase(phrases[phraseIndex], function () {
+            erasePhrase(function () {
+                phraseIndex = (phraseIndex + 1) % phrases.length;
+                cyclePhrases();
+            });
+        });
+    }
+
+    if (rotator && !reduceMotion) {
+        setTimeout(cyclePhrases, 900);
+    }
+
+
+    /* =====================================================
+       3. SCROLL REVEALS — observe once, then stop watching
+    ===================================================== */
+
+    var revealables = document.querySelectorAll("[data-reveal]");
+
+    var revealObserver = new IntersectionObserver(function (entries, observer) {
+
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                observer.unobserve(entry.target);
+            }
+        });
+
+    }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+
+    revealables.forEach(function (el) {
+        revealObserver.observe(el);
+    });
+
+
+    /* =====================================================
+       4. ACTIVE NAV LINK
+    ===================================================== */
+
+    var navLinks = document.querySelectorAll(".nav-links a");
+    var sections = document.querySelectorAll("main section[id]");
+
+    var navObserver = new IntersectionObserver(function (entries) {
+
+        entries.forEach(function (entry) {
+
+            if (!entry.isIntersecting) return;
+
+            navLinks.forEach(function (link) {
+                link.classList.toggle(
+                    "active",
+                    link.getAttribute("href") === "#" + entry.target.id
+                );
+            });
+
+        });
+
+    }, { threshold: 0.4 });
+
+    sections.forEach(function (section) {
+        navObserver.observe(section);
+    });
+
+
+    /* =====================================================
+       5. SCROLL PROGRESS + HEADER STATE + BACK TO TOP
+       All read in one rAF-throttled handler.
+    ===================================================== */
+
+    var bar = document.getElementById("progress-bar");
+    var header = document.getElementById("site-header");
+    var toTop = document.getElementById("to-top");
+    var ticking = false;
+
+    function onScroll() {
+
+        var scrolled = window.scrollY;
+        var height = document.documentElement.scrollHeight - window.innerHeight;
+        var pct = height > 0 ? (scrolled / height) * 100 : 0;
+
+        bar.style.width = pct + "%";
+        header.classList.toggle("is-stuck", scrolled > 40);
+        toTop.classList.toggle("is-shown", scrolled > 600);
+
+        ticking = false;
+    }
+
+    window.addEventListener("scroll", function () {
+        if (!ticking) {
+            window.requestAnimationFrame(onScroll);
+            ticking = true;
+        }
+    }, { passive: true });
+
+    onScroll();
+
+    toTop.addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });
+    });
+
+
+    /* =====================================================
+       6. MOBILE MENU
+    ===================================================== */
+
+    var toggle = document.getElementById("nav-toggle");
+    var menu = document.getElementById("nav-links");
+
+    toggle.addEventListener("click", function () {
+        var open = menu.classList.toggle("is-open");
+        toggle.setAttribute("aria-expanded", String(open));
+        toggle.textContent = open ? "Close" : "Menu";
+    });
+
+    navLinks.forEach(function (link) {
+        link.addEventListener("click", function () {
+            menu.classList.remove("is-open");
+            toggle.setAttribute("aria-expanded", "false");
+            toggle.textContent = "Menu";
+        });
+    });
+
+
+    /* =====================================================
+       7. POINTER EFFECTS — page spotlight + card tilt/glow
+       Skipped entirely on touch and reduced-motion.
+    ===================================================== */
+
+    var finePointer = window.matchMedia("(pointer: fine)").matches;
+
+    if (finePointer && !reduceMotion) {
+
+        var spotlight = document.getElementById("spotlight");
+
+        window.addEventListener("pointermove", function (e) {
+            spotlight.style.setProperty("--mx", e.clientX + "px");
+            spotlight.style.setProperty("--my", e.clientY + "px");
+        }, { passive: true });
+
+
+        document.querySelectorAll("[data-tilt]").forEach(function (card) {
+
+            card.addEventListener("pointermove", function (e) {
+
+                var r = card.getBoundingClientRect();
+                var x = e.clientX - r.left;
+                var y = e.clientY - r.top;
+
+                card.style.setProperty("--cx", x + "px");
+                card.style.setProperty("--cy", y + "px");
+
+                var rotY = ((x / r.width) - 0.5) * 7;
+                var rotX = ((y / r.height) - 0.5) * -7;
+
+                card.style.transform =
+                    "perspective(900px) rotateX(" + rotX + "deg) rotateY(" + rotY + "deg) translateY(-6px)";
+            });
+
+            card.addEventListener("pointerleave", function () {
+                card.style.transform = "";
+            });
+
+        });
+
+    }
+
+
+    /* =====================================================
+       8. IMAGE FALLBACK — show the monogram if about.jpg
+       is missing from the folder.
+    ===================================================== */
+
+    var portrait = document.getElementById("portrait");
+    var portraitImg = document.getElementById("portrait-img");
+
+    if (portraitImg) {
+        portraitImg.addEventListener("error", function () {
+            portrait.classList.add("is-fallback");
+        });
+
+        if (portraitImg.complete && portraitImg.naturalWidth === 0) {
+            portrait.classList.add("is-fallback");
+        }
+    }
+
+
+    /* =====================================================
+       9. CONTACT FORM — inline validation, no alerts
+    ===================================================== */
+
+    var form = document.getElementById("contact-form");
+    var status = document.getElementById("form-status");
+
+    function setError(id, message) {
+
+        var input = document.getElementById(id);
+        var field = input.closest(".field");
+        var note = field.querySelector(".error");
+
+        field.classList.toggle("has-error", Boolean(message));
+        note.textContent = message || "";
+
+        return !message;
+    }
+
+    function validate() {
+
+        var name = document.getElementById("name").value.trim();
+        var email = document.getElementById("email").value.trim();
+        var message = document.getElementById("message").value.trim();
+
+        var okName = setError("name", name ? "" : "Add your name so I know who's writing.");
+        var okEmail = setError(
+            "email",
+            !email ? "Add an email so I can reply."
+                   : (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) ? "" : "That email doesn't look complete.")
+        );
+        var okMessage = setError("message", message.length >= 10 ? "" : "Tell me a little more — at least 10 characters.");
+
+        return okName && okEmail && okMessage;
+    }
+
+    form.addEventListener("submit", function (e) {
+
+        e.preventDefault();
+
+        if (!validate()) {
+            status.classList.remove("is-shown");
+            form.querySelector(".has-error input, .has-error textarea").focus();
+            return;
+        }
+
+        var name = document.getElementById("name").value.trim();
+
+        status.textContent = "Sent. Thanks, " + name + " — I'll get back to you soon.";
+        status.classList.add("is-shown");
+
+        form.reset();
+
+        setTimeout(function () {
+            status.classList.remove("is-shown");
+        }, 6000);
+    });
+
+    /* Clear an error as soon as the field is fixed */
+
+    form.querySelectorAll("input, textarea").forEach(function (input) {
+        input.addEventListener("input", function () {
+            if (input.closest(".field").classList.contains("has-error")) {
+                validate();
+            }
+        });
+    });
+
+});
+</script>
+
+</body>
+</html>
